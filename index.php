@@ -35,7 +35,7 @@ max-height:100%; margin: 0 auto;
 $j=$i-1;
 echo '<a href="?i='.$j.'">[<]</a>';
 } ?>
-&nbsp|&nbsp;<?php if ($i<(count($files)-1)) 
+&nbsp;|&nbsp;<?php if ($i<(count($files)-1)) 
 {
 $j=$i+1;
 echo '<a href="?i='.$j.'">[>]</a>';
