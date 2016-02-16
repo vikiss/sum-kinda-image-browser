@@ -1,8 +1,12 @@
 <?php
 $files = preg_grep('~\.(jpeg|jpg|png)$~', scandir(getcwd()));
 $files = array_values($files);
-$i = $_GET['i'];
-if (is_numeric($i)) {$file = $files[$i];} else {$file = $files[0]; $i = 0;}
+$file = $files[0];
+$i = 0;
+if (isset($_GET['i'])) {
+  $i = $_GET['i'];
+    if (is_numeric($i)) {$file = $files[$i];} 
+}
 ?>
 
 <html>
